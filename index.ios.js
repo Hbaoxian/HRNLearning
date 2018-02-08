@@ -33,59 +33,92 @@ export default class hBXRNLearning extends Component {
     return (
       <View style={myStyle.container}>
 
+          <View style={myStyle.smallView}>
+              <Text style={myStyle.textStyle}>
+                  我是里面的view
+              </Text>
 
-          <Text>
 
-          wwwww
+              <Text >
+                  我是下面view
+              </Text>
+          </View>
 
-          </Text>
+          <View style={myStyle.smallView}>
+              <Text style={myStyle.textStyle}>
+                  我是右边
+              </Text>
+          </View>
 
-        <TextInput   style={myStyle.container}>
 
-        </TextInput>
-        {/*<Text style={styles.welcome}>*/}
-          {/*Welcome hell baby to React Native!*/}
-        {/*</Text>*/}
-        {/*<Text style={styles.instructions}>*/}
-          {/*To get started, edit index.ios.js*/}
-        {/*</Text>*/}
-        {/*<Text style={styles.instructions}>*/}
-          {/*Press Cmd+R to reload,{'\n'}*/}
-          {/*Cmd+D or shake for dev menu*/}
-        {/*</Text>*/}
       </View>
     );
   }
 }
-//
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//     backgroundColor: '#F5FCFF',
-//   },
-//   welcome: {
-//     fontSize: 20,
-//     textAlign: 'center',
-//     margin: 10,
-//   },
-//   instructions: {
-//     textAlign: 'center',
-//     color: '#333333',
-//     marginBottom: 5,
-//   },
-// });
+
+
+export default   class secondExample extends  Component {
+
+    
+
+
+}
+
+/**flexbox布局技术
+*
+* 1 主轴方法  默认朝下排列  自视图的排列方向 x轴
+ *  侧轴  y轴
+*   主轴排列不了再往侧轴排列
+*   修改主轴的方向 修改父视图的主轴
+* */
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  instructions: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5,
+  },
+});
 
 const myStyle = StyleSheet.create({
     container: {
-        flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'green',
-    }
+          /* 达到全屏 */
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: 'green',
+         /*、修改主轴的方向 默认是垂直方向*/
+         /*、column 冲还是那个到下  row 是从左往右
+         * row-reverse 从右往左  column-reverse 从下到上
+         * */
+         flexDirection: 'column-reverse',
+    },
+    smallView: {
+        width: 200,
+        height: 80,
+        backgroundColor: 'red',
+    },
+    textStyle:{
+       fontSize:14,
+       color: 'red',
+        backgroundColor:'black'
+    },
 
-
+    bottom:{
+      fontSize:17,
+      backgroundColor:'yellow',
+    },
 });
 
 
