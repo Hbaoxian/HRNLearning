@@ -17,6 +17,20 @@
 /*const styles = StyleSheet.create 样式*/
 import  LoinView from  './loginView'
 
+/*点击事件*/
+import TouchActionView from  './iOSComponent/touchAction'
+
+/*生命周期*/
+import LifeCycleView from  './iOSComponent/lifrCycle'
+
+
+/*scrollview*/
+//import ScrollView from './iOSComponent/ScrollerView'
+
+/*轮播图项目*/
+import WelComeView from './iOSComponent/Welcome'
+
+
 import React, { Component } from 'react';
 import {
   AppRegistry,
@@ -38,7 +52,7 @@ var Dimensions = require('Dimensions');
 export default class hBXRNLearning extends Component {
     render(){
         return(
-           <LoinView/>
+           <WelComeView/>
         );
     }
 }
