@@ -28,7 +28,21 @@ import LifeCycleView from  './iOSComponent/lifrCycle'
 //import ScrollView from './iOSComponent/ScrollerView'
 
 /*轮播图项目*/
-import WelComeView from './iOSComponent/Welcome'
+// import WelComeView from './iOSComponent/Welcome'
+
+/*初试listView*/
+import  HListView from './iOSComponent/ListView'
+
+/*list练习*/
+import  HListView2 from './iOSComponent/ListView2'
+
+/*tabar学习*/
+import HTabBarVC  from './iOSComponent/HTabBarController'
+
+
+
+/*分组listView*/
+import SectionListView from './iOSComponent/SectionListView'
 
 
 import React, { Component } from 'react';
@@ -52,7 +66,7 @@ var Dimensions = require('Dimensions');
 export default class hBXRNLearning extends Component {
     render(){
         return(
-           <WelComeView/>
+           <HTabBarVC/>
         );
     }
 }

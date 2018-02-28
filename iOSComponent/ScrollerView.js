@@ -20,7 +20,10 @@ export default class scrollView extends Component {
         return(
            <ScrollView horizontal={true}
                        showsHorizontalScrollIndicator={false}
-                       pagingEnabled={true}>
+                       pagingEnabled={true}
+                       onMomentumScrollEnd={(e)=>this.scrollEnd(e)}
+
+           >
                {this.renderChildView()}
            </ScrollView>
         );
@@ -41,6 +44,11 @@ export default class scrollView extends Component {
             )
         }
         return allChild;
+    }
+
+    scrollEnd(e){
+
+    AlertIOS.alert("isos");
     }
 
 
